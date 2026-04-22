@@ -35,7 +35,7 @@ public class VehiculoCombustible: Vehiculo
     {
         double litrosTotales;
         if (CalcularEdad()>5) {
-            double litrosViejo = litrosExtra + (kilometros/15);
+            double litrosViejo = litrosExtra * (kilometros/15);
             litrosTotales = litrosViejo + (kilometros / kilometrosPorLitro);
         }
         else {
